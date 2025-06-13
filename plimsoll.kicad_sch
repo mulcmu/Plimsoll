@@ -1,0 +1,20 @@
+(kicad_sch
+	(version 20250114)
+	(generator "eeschema")
+	(generator_version "9.0")
+	(uuid "b397e82d-d09a-42a7-b887-b93eb41b4aac")
+	(paper "B")
+	(title_block
+		(title "Klipper load cell module")
+		(rev "0")
+		(company "https://github.com/mulcmu/plimsoll")
+		(comment 1 "CERN-OHL-S ")
+	)
+	(lib_symbols)
+	(sheet_instances
+		(path "/"
+			(page "1")
+		)
+	)
+	(embedded_fonts no)
+)
