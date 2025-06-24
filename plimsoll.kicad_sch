@@ -5710,6 +5710,16 @@
 		)
 		(uuid "4030658c-1dbf-40ee-b3ec-535e75614c38")
 	)
+	(text "TODO\n\nC81720 for MCU 48 pin"
+		(exclude_from_sim no)
+		(at 161.036 105.664 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "8891fa13-9566-4e1b-bb0a-2de5da8f521b")
+	)
 	(text "Low noise, high PSSR LDO\nUsed for analog Vdd"
 		(exclude_from_sim no)
 		(at 292.1 60.198 0)
