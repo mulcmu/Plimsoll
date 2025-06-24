@@ -1,6 +1,6 @@
 # Plimsoll
 
-![plimsoll](plimsoll r0.jpg)
+![plimsoll](plimsoll%20r0.jpg)
 
 Prototype design for STM32F072 and HX717 based strain gauge for use as a Klipper load cell.
 
