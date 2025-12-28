@@ -1,6 +1,6 @@
 # Plimsoll
 
-![plimsoll](plimsoll r0.jpg)
+![plimsoll](alpha_test/plimsoll%20r0.jpg)
 
 Prototype designs for load cell ADC implementations.
 
@@ -29,6 +29,8 @@ HX717 default data rate 320 Hz.  Adjustable with solder jumpers.
 > Works fine 90% of time, but suffers from occasional timeouts during probes.
 
 ### Mini HX717
+
+![mini](mini/Screenshot%202025-12-27%20220855.png)
 
 HX717 addon for a FYTSEC H36 Toolhead board.  Uses the 2x6 expansion header for clean mounting.
 
