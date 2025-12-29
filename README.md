@@ -1,10 +1,10 @@
 # Plimsoll
 
-![plimsoll](alpha_test/plimsoll%20r0.jpg)
-
-Prototype designs for load cell ADC implementations.
+Prototype designs for klipper load cell ADC implementations.
 
 ### Alpha Test
+
+<img src="alpha_test/plimsoll%20r0.jpg" alt="plimsoll" style="zoom: 25%;" />
 
 STM32F072 and HX717 based strain gauge for use as a Klipper load cell.
 
@@ -28,11 +28,11 @@ HX717 default data rate 320 Hz.  Adjustable with solder jumpers.
 >
 > Works fine 90% of time, but suffers from occasional timeouts during probes.
 
-### Mini HX717
+### Mini HX717 / Mini ADS1220
 
-![mini](mini/Screenshot%202025-12-27%20220855.png)
+<img src="mini_hx717/Screenshot%202025-12-27%20220855.png" alt="mini" style="zoom:25%;" />
 
-HX717 addon for a FYTSEC H36 Toolhead board.  Uses the 2x6 expansion header for clean mounting.
+Addon for a FYTSEC H36 Toolhead board.  Uses the 2x6 expansion header for clean mounting.
 
 Untested but ready to order.
 
@@ -42,12 +42,10 @@ Separate low noise, high PSRR for analog Vdd supply.
 
 HX717 data rate 320 Hz.  
 
-### Mini ADS1220
-
-Planned, update mini to use the ADS1220
+ADS1220 all SPI connections.
 
 ### Todo:
 
-- [ ] Finish Mini ADS1220 design
+- [x] Finish Mini ADS1220 design
 - [ ] Design 4ch underbed sensor board with ADS131M04 
 - [ ] Place order for boards
