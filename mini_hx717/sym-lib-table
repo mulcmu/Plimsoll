@@ -1,0 +1,4 @@
+(sym_lib_table
+  (version 7)
+  (lib (name "plimsoll-symbols")(type "KiCad")(uri "${KIPRJMOD}/plimsoll-symbols.kicad_sym")(options "")(descr ""))
+)
