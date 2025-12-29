@@ -2009,7 +2009,7 @@
 			(embedded_fonts no)
 		)
 	)
-	(text "Low noise, high PSSR LDO\nUsed for analog Vdd"
+	(text "Low noise, high PSSR LDO\nUsed for analog Vdd\n\nTODO: TPS7A2033PDBVR alternative"
 		(exclude_from_sim no)
 		(at 292.1 60.198 0)
 		(effects
@@ -9212,6 +9212,16 @@
 		)
 		(uuid "979d3b7e-61c0-4cb8-a944-36476bc961f4")
 	)
+	(label "CLK"
+		(at 312.42 144.78 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "a1f0fa70-f741-4faf-a09a-60d6765643d3")
+	)
 	(label "Signal+"
 		(at 229.87 135.89 180)
 		(effects
@@ -9221,6 +9231,16 @@
 			(justify right bottom)
 		)
 		(uuid "a3f35586-7e74-42dc-bd98-c21742f63ee1")
+	)
+	(label "MISO"
+		(at 312.42 142.24 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "b1ec0a6d-aa88-4717-ba11-1c089307625e")
 	)
 	(label "Signal-"
 		(at 229.87 138.43 180)
