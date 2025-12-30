@@ -34,8 +34,6 @@ HX717 default data rate 320 Hz.  Adjustable with solder jumpers.
 
 Addon for a FYTSEC H36 Toolhead board.  Uses the 2x6 expansion header for clean mounting.
 
-Untested but ready to order.
-
 4 layer PCB all parts on top side.
 
 Separate low noise, high PSRR for analog Vdd supply.
@@ -44,8 +42,18 @@ HX717 data rate 320 Hz.
 
 ADS1220 all SPI connections.
 
+### 4ch Underbed
+
+<img src="underbed/underbed.png" alt="mini" style="zoom:25%;" />
+
+4 channel ADS131M04 for underbed applications.  Each load cell can be individually measured and digitally summed.
+
+8.192 MHz clock hardware generator.
+
+Separate low noise, high PSRR for analog Vdd supply.
+
 ### Todo:
 
 - [x] Finish Mini ADS1220 design
-- [ ] Design 4ch underbed sensor board with ADS131M04 
-- [ ] Place order for boards
+- [x] Design 4ch underbed sensor board with ADS131M04 
+- [x] Place order for boards
