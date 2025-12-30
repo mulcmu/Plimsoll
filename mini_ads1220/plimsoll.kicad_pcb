@@ -217,7 +217,7 @@
 		(path "/5f2164ad-cc0d-4cb4-82eb-3a02fd925689")
 		(sheetname "/")
 		(sheetfile "plimsoll.kicad_sch")
-		(attr through_hole exclude_from_bom)
+		(attr through_hole exclude_from_pos_files exclude_from_bom)
 		(fp_line
 			(start 10.45 3.9)
 			(end 10.45 -2.85)
@@ -959,6 +959,18 @@
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "8a7ac933-fea2-4903-a020-8dec8fed4a07")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "LCSC" "C48263"
+			(at 0 0 0)
+			(layer "F.SilkS")
+			(hide yes)
+			(uuid "fc7f3810-2adf-40bc-83dc-9f68285f4e91")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1969,7 +1981,7 @@
 		(path "/2414f930-c5f2-4f31-982e-c21815e4b386")
 		(sheetname "/")
 		(sheetfile "plimsoll.kicad_sch")
-		(attr smd exclude_from_bom dnp)
+		(attr smd exclude_from_pos_files exclude_from_bom dnp)
 		(fp_line
 			(start -0.14058 -0.51)
 			(end 0.14058 -0.51)
@@ -3034,7 +3046,7 @@
 		(path "/13ebb9db-d63c-4547-af59-f651f65afb81")
 		(sheetname "/")
 		(sheetfile "plimsoll.kicad_sch")
-		(attr smd exclude_from_bom dnp)
+		(attr smd exclude_from_pos_files exclude_from_bom dnp)
 		(fp_line
 			(start -0.14058 0.51)
 			(end 0.14058 0.51)
@@ -3960,7 +3972,7 @@
 		(path "/18c3f59c-2fcb-4ab3-bffe-bb334239939b")
 		(sheetname "/")
 		(sheetfile "plimsoll.kicad_sch")
-		(attr through_hole)
+		(attr through_hole exclude_from_pos_files exclude_from_bom)
 		(fp_line
 			(start -3.06 1.06)
 			(end -1 1.06)

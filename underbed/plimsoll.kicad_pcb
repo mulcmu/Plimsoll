@@ -2373,7 +2373,7 @@
 		(path "/6d9d4455-e828-4bd7-8516-f53a1661bc65")
 		(sheetname "/")
 		(sheetfile "plimsoll.kicad_sch")
-		(attr smd exclude_from_bom dnp)
+		(attr smd exclude_from_pos_files exclude_from_bom dnp)
 		(fp_line
 			(start -0.14058 0.51)
 			(end 0.14058 0.51)
@@ -2589,7 +2589,7 @@
 		(path "/18c3f59c-2fcb-4ab3-bffe-bb334239939b")
 		(sheetname "/")
 		(sheetfile "plimsoll.kicad_sch")
-		(attr through_hole)
+		(attr through_hole exclude_from_pos_files exclude_from_bom)
 		(fp_line
 			(start 1.33 1.27)
 			(end 1.33 14.03)
@@ -3550,7 +3550,7 @@
 		(path "/f760934a-c75e-4967-8b2f-3d57d2935372")
 		(sheetname "/")
 		(sheetfile "plimsoll.kicad_sch")
-		(attr smd exclude_from_bom dnp)
+		(attr smd exclude_from_pos_files exclude_from_bom dnp)
 		(fp_line
 			(start -0.14058 0.51)
 			(end 0.14058 0.51)
@@ -4452,7 +4452,7 @@
 		(path "/aa00c219-8b2b-4eec-8426-037e814f9290")
 		(sheetname "/")
 		(sheetfile "plimsoll.kicad_sch")
-		(attr through_hole exclude_from_bom)
+		(attr through_hole exclude_from_pos_files exclude_from_bom)
 		(fp_line
 			(start -1.6 -2.75)
 			(end -2.85 -2.75)
@@ -4959,7 +4959,7 @@
 		(path "/83937db1-93a4-47f9-a674-890fb55fcdde")
 		(sheetname "/")
 		(sheetfile "plimsoll.kicad_sch")
-		(attr smd exclude_from_bom dnp)
+		(attr smd exclude_from_pos_files exclude_from_bom dnp)
 		(fp_line
 			(start -0.14058 -0.51)
 			(end 0.14058 -0.51)
@@ -5188,7 +5188,7 @@
 		(path "/e6d8e631-8ddd-485f-9366-7d146c699987")
 		(sheetname "/")
 		(sheetfile "plimsoll.kicad_sch")
-		(attr smd exclude_from_bom dnp)
+		(attr smd exclude_from_pos_files exclude_from_bom dnp)
 		(fp_line
 			(start -0.14058 -0.51)
 			(end 0.14058 -0.51)
@@ -6090,7 +6090,7 @@
 		(path "/3c3ee7d7-88b6-4184-b449-ce46e19f7284")
 		(sheetname "/")
 		(sheetfile "plimsoll.kicad_sch")
-		(attr through_hole exclude_from_bom)
+		(attr through_hole exclude_from_pos_files exclude_from_bom)
 		(fp_line
 			(start 10.06 3.51)
 			(end 10.06 -2.46)
@@ -7159,7 +7159,7 @@
 		(path "/4a4e7dfd-8e8e-4ba1-86bf-2927c392076a")
 		(sheetname "/")
 		(sheetfile "plimsoll.kicad_sch")
-		(attr smd exclude_from_bom dnp)
+		(attr smd exclude_from_pos_files exclude_from_bom dnp)
 		(fp_line
 			(start -0.14058 -0.51)
 			(end 0.14058 -0.51)
@@ -9664,7 +9664,7 @@
 		(path "/eb7fa457-aaad-4851-95d5-ffaf28d46f20")
 		(sheetname "/")
 		(sheetfile "plimsoll.kicad_sch")
-		(attr through_hole exclude_from_bom)
+		(attr through_hole exclude_from_pos_files exclude_from_bom)
 		(fp_line
 			(start -2.56 3.51)
 			(end 10.06 3.51)
@@ -10298,7 +10298,7 @@
 		(path "/f8c79472-f3f3-4153-8b5b-714e71c2be24")
 		(sheetname "/")
 		(sheetfile "plimsoll.kicad_sch")
-		(attr smd exclude_from_bom dnp)
+		(attr smd exclude_from_pos_files exclude_from_bom dnp)
 		(fp_line
 			(start -0.14058 -0.51)
 			(end 0.14058 -0.51)
@@ -10527,7 +10527,7 @@
 		(path "/1c3cfa0d-d9f9-4db3-9793-2f53ea0674e3")
 		(sheetname "/")
 		(sheetfile "plimsoll.kicad_sch")
-		(attr smd exclude_from_bom dnp)
+		(attr smd exclude_from_pos_files exclude_from_bom dnp)
 		(fp_line
 			(start -0.14058 -0.51)
 			(end 0.14058 -0.51)
@@ -11131,7 +11131,7 @@
 		(path "/a9712c87-8228-457d-b8fe-ffb7f11403b9")
 		(sheetname "/")
 		(sheetfile "plimsoll.kicad_sch")
-		(attr smd exclude_from_bom dnp)
+		(attr smd exclude_from_pos_files exclude_from_bom dnp)
 		(fp_line
 			(start -0.14058 -0.51)
 			(end 0.14058 -0.51)
@@ -11346,7 +11346,7 @@
 		(path "/94342e8d-a324-493c-adc7-85ec15b5e72b")
 		(sheetname "/")
 		(sheetfile "plimsoll.kicad_sch")
-		(attr through_hole exclude_from_bom)
+		(attr through_hole exclude_from_pos_files exclude_from_bom)
 		(fp_line
 			(start -2.85 -2.75)
 			(end -2.85 -1.5)
@@ -12240,8 +12240,8 @@
 			(justify left bottom mirror)
 		)
 	)
-	(gr_text "https://github.com/mulcmu/plimsoll"
-		(at 121.5 109 90)
+	(gr_text "4CH Underbed Load Cell Module\nhttps://github.com/mulcmu/plimsoll"
+		(at 116.75 123.75 90)
 		(layer "B.SilkS")
 		(uuid "b897faae-40ec-4981-8605-eb9475a3e030")
 		(effects
@@ -12249,7 +12249,7 @@
 				(size 1.2 1.2)
 				(thickness 0.15)
 			)
-			(justify left bottom mirror)
+			(justify bottom mirror)
 		)
 	)
 	(segment

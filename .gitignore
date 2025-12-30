@@ -1,3 +1,5 @@
 /plimsoll-backups
-*.zip
 *.lck
+/alpha_test/plimsoll-backups
+/mini_ads1220/plimsoll-backups
+/underbed/plimsoll-backups
