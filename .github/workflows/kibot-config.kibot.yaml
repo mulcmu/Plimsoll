@@ -1,0 +1,51 @@
+kibot:
+  version: 1
+
+preflight:
+  run_erc: false
+  run_drc: false
+  check_zone_fills: false
+  ignore_unconnected: false
+
+outputs:
+  - name: 'schematic_pdf'
+    comment: 'Exports the schematic to a PDF file'
+    type: 'pdf_sch_print'
+    dir: 'pdfs'
+    options:
+      output: '%f-schematic.%x'
+
+  - name: 'pcb_top_pdf'
+    comment: 'Exports the PCB top view to PDF'
+    type: 'pdf_pcb_print'
+    dir: 'pdfs'
+    options:
+      output: '%f-pcb-top.%x'
+      plot_sheet_reference: true
+      scaling: 1.0
+      pages:
+        - layers:
+            - layer: F.Cu
+            - layer: F.SilkS
+            - layer: Dwgs.User
+            - layer: Cmts.User
+            - layer: Edge.Cuts
+          sheet: 'Top view'
+
+  - name: 'pcb_bottom_pdf'
+    comment: 'Exports the PCB bottom view to PDF'
+    type: 'pdf_pcb_print'
+    dir: 'pdfs'
+    options:
+      output: '%f-pcb-bottom.%x'
+      plot_sheet_reference: true
+      scaling: 1.0
+      pages:
+        - layers:
+            - layer: B.Cu
+            - layer: B.SilkS
+            - layer: Dwgs.User
+            - layer: Cmts.User
+            - layer: Edge.Cuts
+          sheet: 'Bottom view'
+          mirror: true
