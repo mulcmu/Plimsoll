@@ -57,3 +57,17 @@ Separate low noise, high PSRR for analog Vdd supply.
 - [x] Finish Mini ADS1220 design
 - [x] Design 4ch underbed sensor board with ADS131M04 
 - [x] Place order for boards
+
+## Automated PDF Generation
+
+This repository includes a GitHub Action workflow that automatically generates PDF plots for all KiCad projects. The workflow runs on:
+- Pushes to the `main` or `master` branch
+- Pull requests
+- Manual trigger via workflow dispatch
+
+For each project, the following PDFs are generated:
+- Schematic diagram
+- PCB top view (with copper, silkscreen, and edge cuts layers)
+- PCB bottom view (mirrored, with copper, silkscreen, and edge cuts layers)
+
+The generated PDFs are available as workflow artifacts and can be downloaded from the Actions tab.
