@@ -32,7 +32,6 @@ jobs:
           config: .github/workflows/kibot-config.kibot.yaml
           dir: outputs/${{ matrix.project }}
           schema: '${{ matrix.project }}/plimsoll.kicad_sch'
-          board: '${{ matrix.project }}/plimsoll.kicad_pcb'
 
       - name: Upload PDF artifacts for ${{ matrix.project }}
         uses: actions/upload-artifact@v4
