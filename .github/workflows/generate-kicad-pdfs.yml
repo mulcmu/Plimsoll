@@ -11,6 +11,8 @@ name: Generate KiCad PDF Plots
 jobs:
   generate-pdfs:
     runs-on: ubuntu-latest
+    permissions:
+      contents: read
 
     strategy:
       matrix:
