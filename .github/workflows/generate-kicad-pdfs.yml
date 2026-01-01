@@ -1,6 +1,6 @@
 name: Generate KiCad PDF Plots
 
-on:
+'on':
   push:
     branches:
       - main
@@ -11,7 +11,7 @@ on:
 jobs:
   generate-pdfs:
     runs-on: ubuntu-latest
-    
+
     strategy:
       matrix:
         project:
@@ -19,11 +19,11 @@ jobs:
           - mini_hx717
           - mini_ads1220
           - underbed
-    
+
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
-      
+
       - name: Generate PDFs for ${{ matrix.project }}
         uses: INTI-CMNB/KiBot@v2_k8
         with:
@@ -31,7 +31,7 @@ jobs:
           dir: outputs/${{ matrix.project }}
           schema: '${{ matrix.project }}/plimsoll.kicad_sch'
           board: '${{ matrix.project }}/plimsoll.kicad_pcb'
-      
+
       - name: Upload PDF artifacts for ${{ matrix.project }}
         uses: actions/upload-artifact@v4
         with:
