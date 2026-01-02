@@ -33,15 +33,8 @@ jobs:
           run_erc: false
           schematic_output_pdf: true
           schematic_output_black_white: false
-
-      - name: Rename PDF to include project name
-        run: |
-          if [ -f "plimsoll.pdf" ]; then
-            mv plimsoll.pdf ${{ matrix.project }}-schematic.pdf
-          elif [ -f "${{ matrix.project }}/plimsoll.pdf" ]; then
-            mv ${{ matrix.project }}/plimsoll.pdf \
-               ${{ matrix.project }}-schematic.pdf
-          fi
+          schematic_output_pdf_file_name: >-
+            ${{ matrix.project }}-schematic.pdf
 
       - name: Upload PDF artifacts for ${{ matrix.project }}
         uses: actions/upload-artifact@v4
