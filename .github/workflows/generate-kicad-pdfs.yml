@@ -34,9 +34,15 @@ jobs:
           schematic_output_pdf: true
           schematic_output_black_white: false
 
+      - name: Rename PDF to include project name
+        run: |
+          if [ -f "plimsoll.pdf" ]; then
+            mv plimsoll.pdf ${{ matrix.project }}-schematic.pdf
+          fi
+
       - name: Upload PDF artifacts for ${{ matrix.project }}
         uses: actions/upload-artifact@v4
         with:
           name: kicad-pdfs-${{ matrix.project }}
-          path: ${{ matrix.project }}/*.pdf
+          path: ${{ matrix.project }}-schematic.pdf
           if-no-files-found: warn
