@@ -65,6 +65,6 @@ This repository includes a GitHub Action workflow that automatically generates P
 - Pull requests
 - Manual trigger via workflow dispatch
 
-For each project, schematic diagram PDFs are generated.
+For each project, schematic diagram PDFs are generated and committed back to the repository in their respective project directories (e.g., `alpha_test/alpha_test-schematic.pdf`).
 
-The generated PDFs are available as workflow artifacts and can be downloaded from the Actions tab.
+On pull requests, the generated PDFs are available as workflow artifacts and can be downloaded from the Actions tab.
