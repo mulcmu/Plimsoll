@@ -27,15 +27,16 @@ jobs:
         uses: actions/checkout@v4
 
       - name: Generate PDFs for ${{ matrix.project }}
-        uses: INTI-CMNB/KiBot@v2_k8
+        uses: actions-for-kicad/kicad-actions@v1-k9.0
         with:
-          config: .github/workflows/kibot-config.kibot.yaml
-          dir: outputs/${{ matrix.project }}
-          schema: '${{ matrix.project }}/plimsoll.kicad_sch'
+          schematic_file_name: ${{ matrix.project }}/plimsoll.kicad_sch
+          run_erc: false
+          schematic_output_pdf: true
+          schematic_output_black_white: false
 
       - name: Upload PDF artifacts for ${{ matrix.project }}
         uses: actions/upload-artifact@v4
         with:
           name: kicad-pdfs-${{ matrix.project }}
-          path: outputs/${{ matrix.project }}/**/*.pdf
+          path: ${{ matrix.project }}/*.pdf
           if-no-files-found: warn
