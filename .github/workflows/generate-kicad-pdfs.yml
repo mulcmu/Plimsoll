@@ -38,6 +38,9 @@ jobs:
         run: |
           if [ -f "plimsoll.pdf" ]; then
             mv plimsoll.pdf ${{ matrix.project }}-schematic.pdf
+          elif [ -f "${{ matrix.project }}/plimsoll.pdf" ]; then
+            mv ${{ matrix.project }}/plimsoll.pdf \
+               ${{ matrix.project }}-schematic.pdf
           fi
 
       - name: Upload PDF artifacts for ${{ matrix.project }}
