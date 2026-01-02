@@ -1,0 +1,44 @@
+name: Generate KiCad PDF Plots
+
+'on':
+  push:
+    branches:
+      - main
+      - master
+  pull_request:
+  workflow_dispatch:
+
+jobs:
+  generate-pdfs:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+
+    strategy:
+      matrix:
+        project:
+          - alpha_test
+          - mini_hx717
+          - mini_ads1220
+          - underbed
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Generate PDFs for ${{ matrix.project }}
+        uses: actions-for-kicad/kicad-actions@v1-k9.0
+        with:
+          schematic_file_name: ${{ matrix.project }}/plimsoll.kicad_sch
+          run_erc: false
+          schematic_output_pdf: true
+          schematic_output_black_white: false
+          schematic_output_pdf_file_name: >-
+            ${{ matrix.project }}-schematic.pdf
+
+      - name: Upload PDF artifacts for ${{ matrix.project }}
+        uses: actions/upload-artifact@v4
+        with:
+          name: kicad-pdfs-${{ matrix.project }}
+          path: ${{ matrix.project }}-schematic.pdf
+          if-no-files-found: warn
