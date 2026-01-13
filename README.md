@@ -30,7 +30,7 @@ HX717 default data rate 320 Hz.  Adjustable with solder jumpers.
 
 ### Mini HX717 / Mini ADS1220
 
-<img src="mini_hx717/Screenshot%202025-12-27%20220855.png" alt="mini" style="zoom:25%;" />
+<img src="mini_ads1220/mini.jpg" alt="mini.jpg" style="zoom:25%;" />
 
 Addon for a FYTSEC H36 Toolhead board.  Uses the 2x6 expansion header for clean mounting.
 
