@@ -34,6 +34,8 @@ HX717 default data rate 320 Hz.  Adjustable with solder jumpers.
 
 Addon for a FYTSEC H36 Toolhead board.  Uses the 2x6 expansion header for clean mounting.
 
+Standard 2mm 2x6 female pin header fit with 6mm standoff but doesn't clear the 4 pin jst. 2mm right angle header works with 8mm standoff with pins bent to be straight, leaves clearance for jst and wires.
+
 4 layer PCB all parts on top side.
 
 Separate low noise, high PSRR for analog Vdd supply.
@@ -54,17 +56,8 @@ Separate low noise, high PSRR for analog Vdd supply.
 
 ### Todo:
 
-- [x] Finish Mini ADS1220 design
-- [x] Design 4ch underbed sensor board with ADS131M04 
-- [x] Place order for boards
-
-## Automated PDF Generation
-
-This repository includes a GitHub Action workflow that automatically generates PDF plots for all KiCad projects. The workflow runs on:
-- Pushes to the `main` or `master` branch
-- Pull requests
-- Manual trigger via workflow dispatch
-
-For each project, schematic diagram PDFs are generated and committed back to the repository in their respective project directories (e.g., `alpha_test/alpha_test-schematic.pdf`).
-
-On pull requests, the generated PDFs are available as workflow artifacts and can be downloaded from the Actions tab.
+- [X] Test 2mm pin header fitup on mini pcb
+- [ ] Test mini ads1220
+- [ ] Test mini hx717
+- [ ] Test underbed pcb
+- [ ] ADS131M04 firmware and klipper support
