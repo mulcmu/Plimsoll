@@ -32,9 +32,9 @@ HX717 default data rate 320 Hz.  Adjustable with solder jumpers.
 
 <img src="mini_ads1220/mini.jpg" alt="mini.jpg" style="zoom:25%;" />
 
-Addon for a FYTSEC H36 Toolhead board.  Uses the 2x6 expansion header for clean mounting.
+Addon for a FYSETC H36 Toolhead board.  Uses the 2x6 2mm expansion pin headers for mounting.
 
-Standard 2mm 2x6 female pin header fit with 6mm standoff but doesn't clear the 4 pin jst. 2mm right angle header works with 8mm standoff with pins bent to be straight, leaves clearance for jst and wires.
+Straight needle 2mm 2x6 female pin header (4.3mm plastic body) fits with 6mm standoff but doesn't clear the _IO.0+1_ with a cable installed. A bent needle 2mm 2x6 header works (6mm plastic body) with 8mm standoff after bending the pins to be straight.
 
 4 layer PCB all parts on top side.
 
@@ -42,7 +42,22 @@ Separate low noise, high PSRR for analog Vdd supply.
 
 HX717 data rate 320 Hz.  
 
-ADS1220 all SPI connections.
+ADS1220 hardware SPI connections.
+
+```
+Klipper config for the two mini boards
+
+sensor_type: ads1220
+cs_pin: toolhead:PB6
+spi_bus: spi1a
+data_ready_pin: toolhead:PC13
+
+sensor_type: hx717
+sclk_pin: toolhead:PB3
+dout_pin: toolhead:PB4
+```
+
+
 
 ### 4ch Underbed
 
@@ -57,7 +72,7 @@ Separate low noise, high PSRR for analog Vdd supply.
 ### Todo:
 
 - [X] Test 2mm pin header fitup on mini pcb
-- [ ] Test mini ads1220
-- [ ] Test mini hx717
+- [x] Test mini ads1220
+- [x] Test mini hx717
 - [ ] Test underbed pcb
 - [ ] ADS131M04 firmware and klipper support
