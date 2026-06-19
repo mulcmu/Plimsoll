@@ -32,7 +32,7 @@ HX717 default data rate 320 Hz.  Adjustable with solder jumpers.
 
 <img src="mini_ads1220/mini.jpg" alt="mini.jpg" style="zoom:25%;" />
 
-Addon for a FYSETC H36 Toolhead board.  Uses the 2x6 2mm expansion pin headers for mounting.
+Addon for a FYSETC H36 **v1** Toolhead board.  Uses the 2x6 2mm expansion pin headers for mounting.  Hardware spi works for the [H36_COMBO](https://wiki.fysetc.com/docs/H36-Combo).  The [H36_COMBO_V2](https://wiki.fysetc.com/docs/H36-Combo-V2) changed the header pins.
 
 Straight needle 2mm 2x6 female pin header (4.3mm plastic body) fits with 6mm standoff but doesn't clear the _IO.0+1_ with a cable installed. A bent needle 2mm 2x6 header works (6mm plastic body) with 8mm standoff after bending the pins to be straight.
 
@@ -42,11 +42,11 @@ Separate low noise, high PSRR for analog Vdd supply.
 
 HX717 data rate 320 Hz.  
 
-ADS1220 hardware SPI connections.
+Klipper configs for ADS1220/HX717 configs.  
+Users have reported __software SPI__ is functional on the v2 boards.
 
+H36 V1
 ```
-Klipper config for the two mini boards
-
 sensor_type: ads1220
 cs_pin: toolhead:PB6
 spi_bus: spi1a
@@ -55,6 +55,21 @@ data_ready_pin: toolhead:PC13
 sensor_type: hx717
 sclk_pin: toolhead:PB3
 dout_pin: toolhead:PB4
+```
+
+H36 V2
+```
+sensor_type: ads1220
+cs_pin: toolhead:PA14
+data_ready_pin: toolhead:PA1
+spi_software_sclk_pin:PB7
+spi_software_mosi_pin:PB13
+spi_software_miso_pin:PA15
+spi_speed: 256000
+
+sensor_type: hx717
+sclk_pin: toolhead:PB7
+dout_pin: toolhead:PA15
 ```
 
 
